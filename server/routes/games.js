@@ -6,12 +6,12 @@ const gameController = require("../controllers/gameController");
 router.post("/", async (req, res) => gameController.create(req, res));
 
 //UPDATE GAME STATE
-router.post("/:id", async (req, res) => gameController.update(req, res));
+router.put("/:id", async (req, res) => gameController.update(req, res));
 
 //DELETE GAME
-router.post("/:id", async (req, res) => gameController.delete(req, res));
+router.delete("/:id", async (req, res) => gameController.delete(req, res));
 
 //GET ALL GAMES
-router.post("/:id", async (req, res) => gameController.getAll(req, res));
+router.get("/", async (req, res) => gameController.getAll(req, res));
 
 module.exports = router;
