@@ -7,10 +7,9 @@ module.exports = {
     return schema.validate(data);
   },
 
-  //Word
-  createWordValidation: (data) => {
+  updateGameValidation: (data) => {
     const schema = Joi.object({
-      value: Joi.string().min(3).max(15).required(),
+      letter: Joi.string().min(1).max(1).required(),
     });
     return schema.validate(data);
   },
