@@ -3,6 +3,9 @@ const dotenv = require("dotenv");
 const express = require("express");
 const app = express();
 
+const gameRoute = require("./routes/games");
+const wordRoute = require("./routes/words");
+
 const path = require("path");
 
 dotenv.config();
@@ -12,6 +15,9 @@ mongoose
   .connect(process.env.MONGO_DB_CONNECTION_STRING)
   .then(console.log("Connected to Mongo DB"))
   .catch((err) => console.log(err));
+
+app.use("/api/games", gameRoute);
+//app.use("/api/words", wordRoute);
 
 //Bad json format error handler (400 Bad Request)
 app.use((err, req, res, next) => {
