@@ -1,0 +1,63 @@
+.navBar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.navBarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1260px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0px 40px;
+  margin: 0px 20px;
+}
+
+.navBarLeft,
+.navBarRight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navBarLeftItem {
+  margin-right: 20px;
+}
+
+.navBarButton {
+  height: 100%;
+  padding: 0 40px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navBarButton:hover {
+  background-color: #ef3e55;
+}
+
+.navBarTitle {
+  font-family: "Stick", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navBarLogo {
+  width: 20px;
+  opacity: 50%;
+}
