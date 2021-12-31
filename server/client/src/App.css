@@ -24,3 +24,35 @@ p {
   color: rgba(0, 0, 0, 0.6);
   font-family: "Roboto", sans-serif;
 }
+
+.buttonYellow,
+.buttonRed {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "Stick", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  max-width: 250px;
+}
+
+.buttonYellow {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #f9b248;
+}
+
+.buttonYellow:hover {
+  color: #f5f5f5;
+  background-color: #f99c38;
+}
+
+.buttonRed {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #ef3e55;
+}
+
+.buttonRed:hover {
+  color: #f5f5f5;
+  background-color: #dd2a49;
+}

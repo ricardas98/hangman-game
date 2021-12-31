@@ -1,0 +1,70 @@
+.game {
+  max-width: 1260px;
+  margin: auto;
+}
+
+.gameHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gameHeaderLeft {
+  margin: 50px 0px;
+}
+.gameHeaderRight {
+  display: flex;
+}
+
+.gameHeaderItem {
+  margin-left: 20px;
+}
+
+.gameSessionId {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+}
+
+.gameContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameWord {
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.gameKeyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameKeyboardRow {
+  margin-top: 10px;
+  display: flex;
+}
+
+.gameKeyboardButton {
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 0 5px;
+  outline: none;
+}
+
+.gameKeyboardButton:hover {
+  background-color: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}

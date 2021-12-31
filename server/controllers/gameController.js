@@ -8,6 +8,7 @@ const createCommand = (id, data) => {
   const command = {
     id: id,
     data: {
+      id: data?.id || "",
       word: data?.wordGuessed || "",
       misses: data?.misses || "",
     },

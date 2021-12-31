@@ -5,19 +5,19 @@ import "./Landing.css";
 export const Landing = () => {
   return (
     <div className="landing">
-      <div className="header">
-        <div className="headerContent">
-          <div className="headerTitle">
-            <span className="titleItem">Hangman</span>
-            <span className="subtitleItem">game</span>
+      <div className="landingHeader">
+        <div className="landingHeaderContent">
+          <div className="landingHeaderTitle">
+            <span className="landingTitleItem">Hangman</span>
+            <span className="landingSubtitleItem">game</span>
           </div>
-          <button className="headerButton" onClick={() => window.location.replace("/game")}>
+          <button className="landingHeaderButton" onClick={() => window.location.replace("/game")}>
             Play
           </button>
         </div>
       </div>
-      <div className="main">
-        <div className="about">
+      <div className="landingMain">
+        <div className="landingAbout">
           <h3>About</h3>
           <p>
             Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess
@@ -29,7 +29,7 @@ export const Landing = () => {
             Beasts, and Fishes.[1] This version lacks the image of a hanged man, instead relying on keeping score as to the number of attempts it took each
             player to fill in the blanks.
           </p>
-          <button className="aboutButton" onClick={() => window.open("https://en.wikipedia.org/wiki/Hangman_(game)", "_blank")}>
+          <button className="landingAboutButton" onClick={() => window.open("https://en.wikipedia.org/wiki/Hangman_(game)", "_blank")}>
             Read More
           </button>
         </div>
