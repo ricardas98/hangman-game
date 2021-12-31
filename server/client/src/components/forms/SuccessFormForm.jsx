@@ -4,7 +4,7 @@ export const SuccessForm = ({ handleNewGame, word }) => {
   return (
     <div className="form">
       <span className="formAnnouncementText">You Won!</span>
-      <span className="formSubtitle">The word is "{word}"</span>
+      <span className="formSubtitle">The word is "{word.toUpperCase()}"</span>
       <div className="formButtons">
         <div className="formButton">
           <button className="buttonYellow" onClick={() => handleNewGame()}>

@@ -166,7 +166,7 @@ export const Game = () => {
             <div className="gameIllustrationContainer">
               <img src={illustrations[misses.length]} alt="hangman" className="gameIllustration" />
             </div>
-            <span className="gameWord">{word}</span>
+            <span className="gameWord">{word.toUpperCase()}</span>
             <div className="gameKeyboard">
               {keyboard.map((row, index) => (
                 <div key={index} className="gameKeyboardRow">
