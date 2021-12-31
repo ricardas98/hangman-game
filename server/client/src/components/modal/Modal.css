@@ -1,0 +1,13 @@
+.modal {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+  width: fit-content;
+}
+
+.modalContent {
+  padding: 40px 50px 40px 50px;
+}

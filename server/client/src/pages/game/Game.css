@@ -68,3 +68,13 @@
   background-color: #f2f2f2;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.gameKeyboardButtonDisabled {
+  background-color: #ef3e55;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: default;
+  margin: 0 5px;
+  outline: none;
+}

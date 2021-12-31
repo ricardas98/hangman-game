@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formTitle {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.formAnnouncementText {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.formSubtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto", sans-serif;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.formButton {
+  margin: 20px 10px 0px 10px;
+}
