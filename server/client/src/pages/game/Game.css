@@ -1,6 +1,7 @@
 .game {
   max-width: 1260px;
   margin: auto;
+  min-height: 100vh;
 }
 
 .gameHeader {
@@ -26,6 +27,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+.gameIllustration {
+  opacity: 0.8;
+  height: 30vh;
+  max-width: 500px;
+}
+
+.gameIllustrationContainer {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .gameContent {
   display: flex;
   flex-direction: column;
@@ -34,6 +45,7 @@
 }
 
 .gameWord {
+  color: rgba(0, 0, 0, 0.8);
   letter-spacing: 10px;
   text-align: center;
   margin: 20px 0;
@@ -69,8 +81,18 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.gameKeyboardButtonDisabled {
-  background-color: #ef3e55;
+.gameKeyboardButtonMissed {
+  background-color: #f43b45;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: default;
+  margin: 0 5px;
+  outline: none;
+}
+
+.gameKeyboardButtonGuessed {
+  background-color: #47da4e;
   color: rgba(0, 0, 0, 0.8);
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.1);

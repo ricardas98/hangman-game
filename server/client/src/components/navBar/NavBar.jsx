@@ -1,5 +1,3 @@
-import logoBlack from "../../images/logo-black.svg";
-
 import "./NavBar.css";
 
 export const NavBar = () => {

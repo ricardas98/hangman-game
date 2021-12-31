@@ -18,7 +18,7 @@ const createCommand = (id, data) => {
 
 const deleteGame = (id) => {
   const filteredGames = games.filter((x) => x.id !== id);
-  games = filteredGames;
+  games = [...filteredGames];
 };
 
 module.exports = {
@@ -28,6 +28,13 @@ module.exports = {
       const { error } = createGameValidation(req.body);
       if (error) return res.status(400).json({ Error: error.details[0].message });
 
+      //Clean up old previous games
+      const date = Date.now();
+      const dateThreshold = date - 600000;
+      //console.log(parseInt(games[0]?.id.split("x")[0]) - dateThreshold);
+      const filteredGames = games.filter((x) => parseInt(x.id.split("x")[0]) - dateThreshold > 0);
+      games = [...filteredGames];
+
       //Pick random word
       const index = Math.floor(Math.random() * words.length);
 
@@ -36,7 +43,7 @@ module.exports = {
         word: words[index],
         wordGuessed: "_".repeat(words[index].length),
         misses: [],
-        id: String(Date.now().toString() + "x" + Math.floor(Math.random(0) * 10000).toString()),
+        id: String(date.toString() + "x" + Math.floor(Math.random(0) * 10000).toString()),
       };
 
       //Save game to storage
@@ -96,8 +103,8 @@ module.exports = {
         game.misses.push(letter);
         //Check if player is able to guess (max misses reached)
         if (game.misses.length == 10) {
+          res.status(200).json(createCommand(1, game));
           deleteGame(req.params.id);
-          res.status(200).json(createCommand(1, null));
         } else {
           res.status(200).json(createCommand(0, game));
         }

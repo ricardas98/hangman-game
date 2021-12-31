@@ -5,6 +5,18 @@ import axios from "axios";
 import { Key } from "../../components/key/Key";
 import { Modal } from "../../components/modal/Modal";
 
+import HangMan0 from "../../images/hangman/0.svg";
+import HangMan1 from "../../images/hangman/1.svg";
+import HangMan2 from "../../images/hangman/2.svg";
+import HangMan3 from "../../images/hangman/3.svg";
+import HangMan4 from "../../images/hangman/4.svg";
+import HangMan5 from "../../images/hangman/5.svg";
+import HangMan6 from "../../images/hangman/6.svg";
+import HangMan7 from "../../images/hangman/7.svg";
+import HangMan8 from "../../images/hangman/8.svg";
+import HangMan9 from "../../images/hangman/9.svg";
+import HangMan10 from "../../images/hangman/10.svg";
+
 import "./Game.css";
 import { QuitForm } from "../../components/forms/QuitForm";
 import { RestartForm } from "../../components/forms/RestartForm";
@@ -12,6 +24,7 @@ import { SuccessForm } from "../../components/forms/SuccessFormForm";
 import { FailForm } from "../../components/forms/FailFrom";
 
 export const Game = () => {
+  const illustrations = [HangMan0, HangMan1, HangMan2, HangMan3, HangMan4, HangMan5, HangMan6, HangMan7, HangMan8, HangMan9, HangMan10];
   const keyboard = [
     ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
     ["a", "s", "d", "f", "g", "h", "j", "k", "l"],
@@ -150,6 +163,9 @@ export const Game = () => {
             </div>
           </div>
           <div className="gameContent">
+            <div className="gameIllustrationContainer">
+              <img src={illustrations[misses.length]} alt="hangman" className="gameIllustration" />
+            </div>
             <span className="gameWord">{word}</span>
             <div className="gameKeyboard">
               {keyboard.map((row, index) => (
@@ -157,8 +173,8 @@ export const Game = () => {
                   {row.map((c) => (
                     <button
                       key={c}
-                      className={misses.includes(c) ? "gameKeyboardButtonDisabled" : "gameKeyboardButton"}
-                      disabled={misses.includes(c) ? true : false}
+                      className={misses.includes(c) ? "gameKeyboardButtonMissed" : word.includes(c) ? "gameKeyboardButtonGuessed" : "gameKeyboardButton"}
+                      disabled={misses.includes(c) || word.includes(c) ? true : false}
                       onClick={() => {
                         handleGuess(c);
                       }}

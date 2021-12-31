@@ -71,7 +71,7 @@
 }
 
 .landingAbout {
-  margin-top: 50px;
+  margin: 50px 0px;
   max-width: 960px;
   display: flex;
   flex-direction: column;
@@ -90,10 +90,10 @@
   padding: 20px 50px;
   max-width: 250px;
   color: rgba(0, 0, 0, 0.85);
-  background-color: #ef3e55;
+  background-color: #f43b45;
 }
 
 .landingAboutButton:hover {
   color: #f5f5f5;
-  background-color: #dd2a49;
+  background-color: #da2a32;
 }

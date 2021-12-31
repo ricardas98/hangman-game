@@ -7,6 +7,7 @@ import { Game } from "./pages/game/Game";
 import { NavBar } from "./components/navBar/NavBar";
 
 import "./App.css";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/game" exact element={<Game />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
