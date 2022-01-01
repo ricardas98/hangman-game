@@ -62,8 +62,8 @@ Command types (id)
 ### API
 
 * POST - is used to create a new game session.  
-* DELETE - delete game session when the player has quit, restarted, won or lost the game.  
 * UPDATE - is used to update the game state during gameplay.
+* DELETE - delete game session when the player has quit, restarted, won or lost the game.  
 * GET ALL - is used for development purposes only.
 
 ### Front end
@@ -76,8 +76,8 @@ Some custom hangman illustrations were created to showcase how many misses the p
 API functionality were tested using Jest and Supertest libraries. There were 15 tests created in total. Tests check response formats, status codes and response data.  
 Test count:
 * POST - 3
-* DELETE - 7
-* UPDATE - 3
+* UPDATE - 7
+* DELETE - 3
 * GET ALL - 2
 
 To run tests you have to navigate to the "server" folder of the project and type ```npx jest```
