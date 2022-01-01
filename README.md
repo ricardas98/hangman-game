@@ -69,7 +69,7 @@ Command types (id)
 ### Front end
 
 The client side is responsible for displaying the data and sending data to the server. There is some functionality implemented which highlights the keys/letters that have already been guessed, missed during the game. 
-Some custom illustrations were created to showcase how many misses the player. The design is not currently responsive.
+Some custom illustrations were created to showcase how many misses the player. The design has a breakpoint at 960px to make it a bit more mobile friendly.
 
 ### Tests
 
@@ -79,6 +79,8 @@ Test count:
 * DELETE - 7
 * UPDATE - 3
 * GET ALL - 2
+
+To run tests you have to navigate to the "server" folder of the project and type ```npx jest```
 
 
 
@@ -91,4 +93,4 @@ Test count:
 
 
 
-![alt text](https://i.gyazo.com/06dfa0631a4d55bb1c57b0331842af0c.png "Game view")
+![alt text](https://i.imgur.com/lfzE4uP.png "Game view")
