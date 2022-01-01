@@ -69,7 +69,7 @@ Command types (id)
 ### Front end
 
 The client side is responsible for displaying the data and sending data to the server. There is some functionality implemented which highlights the keys/letters that have already been guessed, missed during the game. 
-Some custom illustrations were created to showcase how many misses the player. The design has a breakpoint at 960px to make it a bit more mobile friendly.
+Some custom hangman illustrations were created to showcase how many misses the player has made. The design has a breakpoint at 960px to make it a bit more mobile friendly.
 
 ### Tests
 
