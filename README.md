@@ -73,7 +73,7 @@ Some custom illustrations were created to showcase how many misses the player. T
 
 ### Tests
 
-API functionality were tested using Jest and Supertest libraries. In total there was 15 tests created. Tests check response formats, status codes and response data.  
+API functionality were tested using Jest and Supertest libraries. There were 15 tests created in total. Tests check response formats, status codes and response data.  
 Test count:
 * POST - 3
 * DELETE - 7
