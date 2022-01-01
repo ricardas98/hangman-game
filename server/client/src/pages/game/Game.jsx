@@ -145,9 +145,7 @@ export const Game = () => {
         <div className="game">
           <div className="gameHeader">
             <div className="gameHeaderLeft">
-              <div className="gameHeaderItem">
-                <span className="gameSessionId">Session id: {id}</span>
-              </div>
+              <span className="gameSessionId">Session id: {id}</span>
             </div>
             <div className="gameHeaderRight">
               <div className="gameHeaderItem">

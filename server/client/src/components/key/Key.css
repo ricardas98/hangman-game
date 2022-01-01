@@ -1,10 +1,18 @@
 .key {
   vertical-align: middle;
-
   line-height: 50px;
   font-size: 24px;
   height: 50px;
   width: 50px;
   text-transform: uppercase;
   background-color: inherit;
+}
+
+@media only screen and (max-width: 960px) {
+  .key {
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+  }
 }

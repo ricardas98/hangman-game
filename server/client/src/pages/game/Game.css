@@ -5,6 +5,7 @@
 }
 
 .gameHeader {
+  margin: 0px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,4 +100,16 @@
   cursor: default;
   margin: 0 5px;
   outline: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .gameIllustration {
+    height: 20vh;
+  }
+  .gameKeyboardRow {
+    margin-top: 5px;
+  }
+  .gameKeyboardButton {
+    margin: 0 3px;
+  }
 }
