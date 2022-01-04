@@ -62,23 +62,25 @@ Command types (id)
 ### API
 
 * POST - is used to create a new game session.  
+* PUT - is used to update the game state during gameplay.
 * DELETE - delete game session when the player has quit, restarted, won or lost the game.  
-* UPDATE - is used to update the game state during gameplay.
-* GET ALL - is used for development purposes only.
+* GET - is used for development purposes only.
 
-### Front end
+### Frontend
 
 The client side is responsible for displaying the data and sending data to the server. There is some functionality implemented which highlights the keys/letters that have already been guessed, missed during the game. 
-Some custom illustrations were created to showcase how many misses the player. The design is not currently responsive.
+Some custom hangman illustrations were created to showcase how many misses the player has made. The design has a breakpoint at 960px to make it a bit more mobile friendly.
 
 ### Tests
 
 API functionality were tested using Jest and Supertest libraries. There were 15 tests created in total. Tests check response formats, status codes and response data.  
 Test count:
 * POST - 3
-* DELETE - 7
-* UPDATE - 3
-* GET ALL - 2
+* PUT - 7
+* DELETE - 3
+* GET - 2
+
+To run tests you have to navigate to the "server" folder of the project and type ```npx jest```
 
 
 
@@ -91,4 +93,4 @@ Test count:
 
 
 
-![alt text](https://i.gyazo.com/06dfa0631a4d55bb1c57b0331842af0c.png "Game view")
+![alt text](https://i.imgur.com/lfzE4uP.png "Game view")
