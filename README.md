@@ -73,12 +73,13 @@ Some custom hangman illustrations were created to showcase how many misses the p
 
 ### Tests
 
-API functionality were tested using Jest and Supertest libraries. There were 15 tests created in total. Tests check response formats, status codes and response data.  
+API functionality were tested using Jest and Supertest libraries. There were 16 tests created in total. Tests check and validate response formats, status codes and response data.  
 Test count:
 * POST - 3
 * PUT - 7
 * DELETE - 3
 * GET - 2
+* NON-EXISTING API URL - 1
 
 To run tests you have to navigate to the "server" folder of the project and type ```npx jest```
 
