@@ -4,6 +4,19 @@ const express = require("express");
 const app = require("../app");
 
 //------------------------------------------------------
+//----------------------WRONG URL-----------------------
+//------------------------------------------------------
+
+describe("POST to non existent API", () => {
+  describe("when request is made to non existent API URL", () => {
+    test("should respond with a 404 status code", async () => {
+      const response = await request(app).post("/api/notexisting").send();
+      expect(response.statusCode).toBe(404);
+    });
+  });
+});
+
+//------------------------------------------------------
 //-------------------------POST-------------------------
 //------------------------------------------------------
 
