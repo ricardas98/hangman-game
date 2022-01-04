@@ -1,0 +1,22 @@
+.notFound {
+  max-width: 1260px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.notFoundTitle {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.notFoundSubtitle {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.notFoundButton {
+  margin-top: 20px;
+}
